@@ -8,6 +8,10 @@
 <br>
 <br>
 <h1>Without Saving Number msg with Whatsapp</h1>
+  <br>
+Enter 
+country code <input type="text" id="code" pattern="[0-9]{10}">
+<br>
 <br>
 Enter 
 Number <input type="text" id="name" pattern="[0-9]{10}">
@@ -17,9 +21,11 @@ Number <input type="text" id="name" pattern="[0-9]{10}">
 <p id="a"></p>	
 <script>
 function my(){
+  var c=document.getElementById("code").value;
 var x=document.getElementById("name").value;
-var y="https://wa.me/91";
-var z=y.concat(x);
+var y="https://wa.me/";
+  var m= y.concat(c);
+var z=m.concat(x);
 myfunc(z);
 }
 
